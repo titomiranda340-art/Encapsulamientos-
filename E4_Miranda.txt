@@ -1,0 +1,12 @@
+class libro:
+    def __init__(self, titulo, autor, año_publicacion):
+        self.titulo=titulo
+        self.autor=autor
+        self.anio_publicacion=anio_publicacion
+    
+    def descripción (self):
+         return f"libro: {self.titulo} {self.autor}, Año: {self.anio_publicacion}"
+
+    def verificacion (self):
+        anio_actual=datetime.now().year
+        return (anio_actual - anio_publicacion) >50
